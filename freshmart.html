@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart</title>
+    <style>
+        nav{
+            border: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: Arial, sans-serif;
+        }
+        nav h1{
+            color: green;
+            font-size: 26px;
+        }
+        nav input{
+            width: 35%;
+            border-radius: 10px;
+            border: 1px solid lightgrey;
+            padding: 12px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+        li{
+            list-style: none;
+            font-size: 17px;
+        }
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgreen; 
+    margin: 30px 50px; 
+    padding: 40px; 
+    border-radius: 15px; 
+}
+
+.banner h2 {
+    font-size: 40px; 
+    color: black; 
+    margin-bottom: 10px; 
+}
+
+.banner p {
+    font-size: 14px; 
+    color: grey; 
+    margin-bottom: 20px; 
+}
+
+.banner button {
+    background-color: green; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    
+}
+.cart {
+    font-size: 90px;
+    
+}
+.category-items
+        {
+            display: flex;
+            gap: 5px;
+        }
+
+.category{
+    background-color: white;
+    padding: 20px 50px;
+    margin-top: 20px;
+}
+.category h3{
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+.item-img
+        {
+            height: 80px;
+            width: 80px;
+            background-color: lightblue;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            font-size: 40px;      
+        }
+        .product-display{
+            padding: 30px 50px;
+        }
+        .product-display h3{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .prod-img{
+            height: 80%;
+            width: 95%;
+            font-size: 80px;
+            background-color:beige ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .products{
+            display: flex;
+            gap: 70px;
+            flex-wrap: wrap;
+        }
+        .prod-card{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid gray;
+            border-radius: 10px;
+            height: 220px;
+            width: 180px;
+            border-radius: 10px;
+            padding: 15px;
+            flex-direction: column;
+            position: relative;
+        }
+        .prod-lab{
+            position: absolute;
+            left: 150px;
+            background-color: red;
+            border-radius: 3px;
+            color: white;
+            top: 7px;
+        }
+        .prod-card p{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .prod-price{
+            color: green;
+        }
+        @media screen and (max-width: 600px) {
+            .banner {
+                flex-direction: column;
+                text-align: center;
+            }
+            .banner-content {
+                margin-bottom: 20px;
+            }
+            .category-items {
+                flex-direction: column;
+                align-items: center;
+            }
+            .products {
+                justify-content: center;
+            }
+        }
+
+    </style>
+</head>
+<style>
+</style>
+
+<body>
+   <nav>
+    <h1>FreshMart</h1>
+    <input type="text" placeholder="Search fruits and vegetables..."/>
+   <ul>
+        <li>Home</li>
+        <li>Product</li>
+        <li>Cart</li>
+   </ul>
+   </nav>
+
+   <div class="banner">
+    <div class="banner-content">
+        <h2>Fresh groceries <br> delivered to you.</h2>
+        <p>Fruits, vegetables and daily essentials delivered fresh.</p>
+        <button>Shop Now</button>
+        </div>
+        <div class="cart">🛒</div>
+        
+   </div>
+   <div class="category">
+    <h3>Shop by Category</h3>
+    <div class="category-items">
+                <div class="items">
+                    <div class="item-img">🍎 </div>
+                    <p class="item-text">Fruits</p>
+                </div>
+                <div class="items">
+                    <div class="item-img">🍆</div>
+                    <p class="item-text">Vegetables</p>
+                </div>
+                <div class="items">
+                    <div class="item-img">🥛</div>
+                    <p class="item-text">Dairy</p>
+                </div>
+                <div class="items">
+                    <div class="item-img">🍞</div>
+                    <p class="item-text">Bakery</p>
+                </div>
+                <div class="items">
+                    <div class="item-img">🥂</div>
+                    <p class="item-text">Drinks</p>
+                </div>
+            </div>
+            </div>
+            
+    <div class="product-display">
+            <h3>Popular Products</h3> 
+            <div class="products">
+                <div class="prod-card">
+                    <label for="" class="prod-lab">NEW</label>
+                    <div class="prod-img">
+                        🍎
+                       
+                    </div>
+
+                    <p>Fresh Apples</p>
+                    <p class="prod-price">₹120 / kg</p>
+
+                </div>
+                <div class="prod-card">
+                    <div class="prod-img">
+                        🍎
+                    </div>
+
+                    <p>Fresh Apples</p>
+                    <p class="prod-price">₹120 / kg</p>
+
+                </div>
+                <div class="prod-card">
+                    <div class="prod-img">
+                        🍎
+                    </div>
+
+                    <p>Fresh Apples</p>
+                    <p class="prod-price">₹120 / kg</p>
+
+                </div>
+                <div class="prod-card">
+                    <div class="prod-img">
+                        🍎
+                    </div>
+
+                    <p>Fresh Apples</p>
+                    <p class="prod-price">₹120 / kg</p>
+
+                </div>
+                <div class="prod-card">
+                    <div class="prod-img">
+                        🍎
+                    </div>
+
+                    <p>Fresh Apples</p>
+                    <p class="prod-price">₹120 / kg</p>
+
+                </div>
+                <div class="prod-card">
+                    <div class="prod-img">
+                        🍎
+                    </div>
+
+                    <p>Fresh Apples</p>
+                    <p class="prod-price">₹120 / kg</p>
+
+                </div>
+                <div class="prod-card">
+                    <div class="prod-img">
+                        🍎
+                    </div>
+
+                    <p>Fresh Apples</p>
+                    <p class="prod-price">₹120 / kg</p>
+
+                </div>
+                <div class="prod-card">
+                    <div class="prod-img">
+                        🍎
+                    </div>
+
+                    <p>Fresh Apples</p>
+                    <p class="prod-price">₹120 / kg</p>
+
+                </div>
+                <div class="prod-card">
+                    <div class="prod-img">
+                        🍎
+                    </div>
+
+                    <p>Fresh Apples</p>
+                    <p class="prod-price">₹120 / kg</p>
+
+                </div>
+                <div class="prod-card">
+                    <div class="prod-img">
+                        🍎
+                    </div>
+
+                    <p>Fresh Apples</p>
+                    <p class="prod-price">₹120 / kg</p>
+
+                </div>
+                </div>   
+                </div>
+</body>
+</html>   
